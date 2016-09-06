@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Connect.Conference.Mobile.Common;assembly=Connect.Conference.Mobile"
+             x:Class="Connect.Conference.Mobile.Views.Login">
+ <ContentPage.Content>
+  <StackLayout
+   VerticalOptions="StartAndExpand"
+   HorizontalOptions="CenterAndExpand"
+   Padding="20,80,20,20">
+   <Label Text="Log in to:" />
+   <Label x:Name="lblSite" />
+   <Label x:Name="txtUsername" />
+   <Entry x:Name="txtPassword"
+    Placeholder="Password"
+    WidthRequest="240"
+    IsPassword="true"></Entry>
+   <Button x:Name="btnLogin"
+    Text="Login"
+    BackgroundColor="#4A83AD"
+    TextColor="White"></Button>
+   <Button x:Name="btnCancel"
+    Text="Cancel"
+    BackgroundColor="#4A83AD"
+    TextColor="White"></Button>
+  </StackLayout>
+ </ContentPage.Content>
+</ContentPage>
