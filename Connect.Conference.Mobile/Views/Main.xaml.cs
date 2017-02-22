@@ -51,12 +51,12 @@ namespace Connect.Conference.Mobile.Views
                     });
                 };
 
-                //await Navigation.PushAsync(scanPage);
+                await Navigation.PushAsync(scanPage);
 
                 // Mocking code
-                var mockSite = JsonConvert.DeserializeObject<AppLink>("{\"Host\":\"www.dnnconnect.dev\",\"Scheme\":\"http\",\"TabId\":234,\"ModuleId\":736,\"Username\":\"peter@donker.name\",\"ConferenceId\":2}");
-                var mockLi = new Login(mockSite, this);
-                await Navigation.PushAsync(mockLi);
+                //var mockSite = JsonConvert.DeserializeObject<AppLink>("{\"Host\":\"www.dnnconnect.dev\",\"Scheme\":\"http\",\"TabId\":234,\"ModuleId\":736,\"Username\":\"peter@donker.name\",\"ConferenceId\":2}");
+                //var mockLi = new Login(mockSite, this);
+                //await Navigation.PushAsync(mockLi);
 
             }
             else
